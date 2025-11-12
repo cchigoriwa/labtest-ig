@@ -10,5 +10,16 @@ Description: "Example of a profile of Patient"
 * name.family ^short = "Patient's last name"
 * birthDate 0..1
 * photo 0..0
+* gender 1..1
+* gender from ZimGenderVS
+
+ValueSet: ZimGenderVS
+Id: ZimGender
+Title: "Gender Value Set"
+Description: "Administrative Gender"
+* http://hl7.org/fhir/administrative-gender#male "Male"
+* http://hl7.org/fhir/administrative-gender#female "Female"
+* http://hl7.org/fhir/administrative-gender#unknown "Unknown"
+
 
 
